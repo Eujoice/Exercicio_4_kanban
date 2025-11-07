@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.auth.LoginFragment">
-
+    tools:context=".ui.auth.RegisterFragment">
 
     <LinearLayout
         android:id="@+id/linearlayout"
@@ -52,36 +51,12 @@
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Enviar"
             android:textColor="@color/color_default"
             app:backgroundTint="@null"
             android:layout_marginTop="16dp"
             android:backgroundTint="@null"
             android:background="@drawable/bg_btn"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="4dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Criar Conta"
-                android:layout_weight="1"
-                android:textAlignment="textStart"
-                android:textColor="@color/white"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Recuperar Conta"
-                android:layout_weight="1"
-                android:textAlignment="textEnd"
-                android:textColor="@color/white"/>
-
-        </LinearLayout>
 
         <ProgressBar
             android:layout_width="wrap_content"
@@ -94,3 +69,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
