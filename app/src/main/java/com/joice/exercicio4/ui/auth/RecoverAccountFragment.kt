@@ -5,14 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentContainerView
 import com.joice.exercicio4.R
-import com.joice.exercicio4.databinding.FragmentLoginBinding
-import com.joice.exercicio4.databinding.FragmentRegisterBinding
+import com.joice.exercicio4.databinding.FragmentRecoverAccountBinding
 
 
-class LoginFragment : Fragment() {
+class RecoverAccountFragment : Fragment() {
 
-    private var _binding: FragmentLoginBinding? = null
+    private var _binding: FragmentRecoverAccountBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -21,9 +21,8 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        _binding = FragmentRecoverAccountBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onDestroyView() {
