@@ -54,10 +54,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:textColor="@color/color_default"
+            android:textColor="@color/amarelo"
             app:backgroundTint="@null"
             android:layout_marginTop="16dp"
-            android:backgroundTint="@null"
+            android:backgroundTint="@color/lilas"
             android:background="@drawable/bg_btn"/>
 
         <LinearLayout
@@ -94,8 +94,17 @@
             tools:visibility="visible"
             android:visibility="invisible"/>
 
-
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joice Bento Calixto da Costa"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="100dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,7 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:navigationIcon="@drawable/ic_back"
+            app:navigationIcon="@drawable/ic_arrowback"
             android:paddingTop="40dp">
 
             <TextView
@@ -63,10 +63,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Enviar"
-                android:textColor="@color/color_default"
+                android:textColor="@color/amarelo"
                 app:backgroundTint="@null"
                 android:layout_marginTop="16dp"
-                android:backgroundTint="@null"
+                android:backgroundTint="@color/lilas"
                 android:background="@drawable/bg_btn"/>
 
             <ProgressBar
@@ -79,6 +79,15 @@
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joice Bento Calixto da Costa"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
     </LinearLayout>
+
 
 </ScrollView>
