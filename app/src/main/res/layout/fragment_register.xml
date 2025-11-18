@@ -25,10 +25,8 @@
                 android:text="Criar Conta"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"/>
+
         </com.google.android.material.appbar.MaterialToolbar>
-
-
-
         <LinearLayout
             android:id="@+id/linearlayout2"
             android:layout_width="match_parent"
@@ -83,7 +81,9 @@
                 android:layout_height="wrap_content"
                 android:indeterminateTint="@color/white"
                 android:layout_gravity="center"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp"
+                android:visibility="invisible"
+                tools:visibility="visible"/>
 
         </LinearLayout>
 
