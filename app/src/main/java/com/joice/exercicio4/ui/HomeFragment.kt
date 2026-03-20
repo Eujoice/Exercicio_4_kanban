@@ -37,7 +37,7 @@ class HomeFragment : Fragment() {
         pageAdapter.addFragment(TodoFragment(), R.string.status_task_doing)
         pageAdapter.addFragment(TodoFragment(), R.string.status_task_done)
 
-        binding.viewPager.offScreenPageLimit = pageAdapter.itemCount
+        binding.viewPager.offscreenPageLimit = pageAdapter.itemCount
 
         TabLayoutMediator(binding.tabs, binding.viewPager){ tab, position ->
             tab.text = getString(pageAdapter.getTitle(position))

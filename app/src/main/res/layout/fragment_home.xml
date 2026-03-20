@@ -10,7 +10,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="15dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -27,8 +27,7 @@
                 app:tabMode="scrollable"
                 app:tabPaddingStart="24dp"
                 app:tabPaddingEnd="24dp"
-                android:textSize="14sp"
-                android:textStyle="bold"
+                app:tabSelectedTextAppearance="@style/CustomTabLayout"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
