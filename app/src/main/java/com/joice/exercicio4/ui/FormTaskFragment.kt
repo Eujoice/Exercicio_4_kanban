@@ -5,10 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.joice.exercicio4.R
 import com.joice.exercicio4.databinding.FragmentDoneBinding
 import com.joice.exercicio4.databinding.FragmentFormTaskBinding
 import com.joice.exercicio4.util.initToolbar
+import com.joice.exercicio4.util.showBottomSheet
 
 class FormTaskFragment : Fragment() {
 
@@ -32,7 +34,18 @@ class FormTaskFragment : Fragment() {
     }
 
     private fun initListener() {
-        binding.buttonSave
+        binding.buttonSave.setOnClickListener {
+            validateData()
+        }
+    }
+
+    private fun validateData() {
+        val description = binding.editTextDescricao.text.toString().trim()
+        if (description.isNotBlank()) {
+            Toast.makeText(requireContext(), "Tudo OK!", Toast.LENGTH_SHORT).show()
+        } else {
+            showBottomSheet(message = R.string.description_empty_form_task_fragment)
+        }
     }
 
 }

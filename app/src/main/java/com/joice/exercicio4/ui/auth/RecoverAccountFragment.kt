@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.joice.exercicio4.R
 import com.joice.exercicio4.databinding.FragmentRecoverAccountBinding
 import com.joice.exercicio4.util.initToolbar
+import com.joice.exercicio4.util.showBottomSheet
 
 
 class RecoverAccountFragment : Fragment() {
@@ -46,7 +47,7 @@ class RecoverAccountFragment : Fragment() {
         if(email.isNotBlank()) {
             Toast.makeText(requireContext(), "Tudo OK!", Toast.LENGTH_SHORT).show()
         } else {
-            Toast.makeText(requireContext(), "Preencha um email válido!", Toast.LENGTH_SHORT).show()
+            showBottomSheet(message = R.string.email_empty)
         }
     }
 

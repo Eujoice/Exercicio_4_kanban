@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.joice.exercicio4.R
 import com.joice.exercicio4.databinding.FragmentRegisterBinding
 import com.joice.exercicio4.util.initToolbar
+import com.joice.exercicio4.util.showBottomSheet
 
 
 class RegisterFragment : Fragment() {
@@ -26,7 +27,6 @@ class RegisterFragment : Fragment() {
         _binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return binding.root
 
-        initToolbar()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -49,10 +49,10 @@ class RegisterFragment : Fragment() {
             if(senha.isNotBlank()) {
                 Toast.makeText(requireContext(), "Tudo OK!", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(requireContext(), "Preencha a senha!", Toast.LENGTH_SHORT).show()
+                showBottomSheet(message = R.string.password_empty_register_fragment)
             }
         } else {
-            Toast.makeText(requireContext(), "Preencha seu email!", Toast.LENGTH_SHORT).show()
+            showBottomSheet(message = R.string.email_empty_register_fragment)
         }
     }
 
