@@ -8,4 +8,7 @@
 
     <color name="color_delete">#C9063D</color>
     <color name="color_details">#A30A87</color>
+
+    <color name="color_status_todo">#f2561d</color>
+    <color name="color_status_done">#69bf13</color>
 </resources>
