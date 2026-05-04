@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "903084722588",
+    "project_id": "kanban-bd2a8",
+    "storage_bucket": "kanban-bd2a8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903084722588:android:4f10f09459816ee2e8e059",
+        "android_client_info": {
+          "package_name": "com.joice.exercicio4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBefXnjDxohQhAqTdU4XryYLyltx691hyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

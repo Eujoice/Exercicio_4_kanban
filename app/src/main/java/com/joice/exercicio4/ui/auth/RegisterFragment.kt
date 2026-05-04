@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.auth.FirebaseAuth
 import com.joice.exercicio4.R
 import com.joice.exercicio4.databinding.FragmentRegisterBinding
 import com.joice.exercicio4.util.initToolbar
@@ -19,6 +20,8 @@ class RegisterFragment : Fragment() {
     private var _binding: FragmentRegisterBinding? = null
     private val binding get() = _binding!!
 
+    // variavel que armazena API de autenticação com o Firebase
+    private lateinit var auth: FirebaseAuth
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

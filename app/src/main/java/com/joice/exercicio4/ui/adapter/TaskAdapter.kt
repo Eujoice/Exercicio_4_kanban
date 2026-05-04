@@ -16,7 +16,6 @@ import com.joice.exercicio4.databinding.ItemTaskBinding
 
 class TaskAdapter(
     private val context: Context,
-    private val taskList: List<Task>,
     private val taskSelected: (Task, Int) -> Unit
 ): ListAdapter<Task, TaskAdapter.MyViewHolder>(DIFF_CALBACK) {
 
@@ -45,7 +44,6 @@ class TaskAdapter(
 
         }
     }
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = ItemTaskBinding.inflate(LayoutInflater.from(parent.context), parent, false)
