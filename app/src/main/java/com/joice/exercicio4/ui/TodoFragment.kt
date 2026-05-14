@@ -112,7 +112,10 @@ class TodoFragment : Fragment() {
             .setValue(task).addOnCompleteListener { setFragmentResult() ->
                 if(result.isSuccessful) {
                     Toast.makeText(requireContext(), R.string.text_save_sucess_form_task_fragment, Toast.LENGTH_SHORT).show()
-                }}
+                } else {
+                    Toast.makeText(requireContext(), R.string.error_generic, Toast.LENGTH_SHORT).show()
+                }
+            }
     }
 
     override fun onDestroyView() {
