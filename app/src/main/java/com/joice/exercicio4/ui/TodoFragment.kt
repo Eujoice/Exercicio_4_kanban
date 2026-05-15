@@ -109,7 +109,7 @@ class TodoFragment : Fragment() {
             .child("task")
             .child(FirebaseHelper.getIdUser())
             .child(task.id)
-            .setValue(task).addOnCompleteListener { setFragmentResult() ->
+            .setValue(task).addOnCompleteListener { result ->
                 if(result.isSuccessful) {
                     Toast.makeText(requireContext(), R.string.text_save_sucess_form_task_fragment, Toast.LENGTH_SHORT).show()
                 } else {

@@ -43,6 +43,7 @@
 
     <!-- Form Task Fragment -->
     <string name="description_empty_form_task_fragment">Preencha uma descrição</string>
+    <string name="text_save_sucess_form_task_fragment">Tarefa salva com sucesso</string>
 
     <!-- Não sei ainda -->
     <string name="text_delete_success_task">Task deletada com sucesso</string>
