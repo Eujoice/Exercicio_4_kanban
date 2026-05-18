@@ -23,7 +23,9 @@
     <string name="email_empty">Preencha seu email!</string>
     <string name="password_text">Senha</string>
     <string name="email_text">E-mail</string>
-    <string name="error_generic">Erro</string>
+    <string name="error_generic">Ocoreu um erro! Por favor tente novamente mais tarde</string>
+    <string name="text_list_task_empty">Nenhuma tarefa cadastrada!</string>
+    <string name="text_list_task_load">Aguarde, estamos carregando as informações!</string>
 
     <!-- Login Fragment -->
     <string name="text_title_login_fragment">Login</string>
@@ -43,8 +45,12 @@
 
     <!-- Form Task Fragment -->
     <string name="description_empty_form_task_fragment">Preencha uma descrição</string>
+    <string name="text_delete_success_task">Task deletada com sucesso</string>
     <string name="text_save_sucess_form_task_fragment">Tarefa salva com sucesso</string>
 
-    <!-- Não sei ainda -->
-    <string name="text_delete_success_task">Task deletada com sucesso</string>
+    <!-- -->
+    <string name="text_button_dialog_confirm_logout">Deseja sair da sua conta?</string>
+    <string name="text_title_dialog_confirm_logout">Confirmar</string>
+    <string name="text_message_dialog_confirm_logout">Aperte em confirmar para sair da sua conta</string>
+
 </resources>

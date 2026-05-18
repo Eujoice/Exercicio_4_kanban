@@ -48,6 +48,7 @@ class FormTaskFragment : Fragment() {
 
         reference = Firebase.database.reference
         auth = Firebase.auth
+
         initListener()
     }
 
@@ -56,7 +57,7 @@ class FormTaskFragment : Fragment() {
             validateData()
         }
 
-        binding.radioGroup.setOnCheckedChangeListener { _binding,  id-> status =
+        binding.radioGroup.setOnCheckedChangeListener { _,  id-> status =
             when(id) {
                 R.id.rbTodo -> Status.TODO
                 R.id.rbDoing -> Status.DOING
@@ -70,10 +71,7 @@ class FormTaskFragment : Fragment() {
         if (description.isNotBlank()) {
             binding.progressBar.isVisible = true
 
-            if(newTask) task = Task()
-            task.id = reference.database.reference.push().key ?: ""
-            task.description = description
-            task.status = status
+            if(newTask) task = Task(reference.database.reference.push().key ?: "", description, status)
 
             saveTask()
         } else {
