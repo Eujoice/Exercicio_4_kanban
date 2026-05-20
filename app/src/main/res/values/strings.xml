@@ -16,6 +16,7 @@
     <string name="hint_edit_password">Digite sua senha</string>
 
     <!-- Generics -->
+    <string name="meu_nome">Joice Bento Calixto da Costa</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_title_warning">Atenção</string>
     <string name="text_button_warning">Entendi</string>
@@ -52,6 +53,6 @@
     <!-- -->
     <string name="text_button_dialog_confirm_logout">Deseja sair da sua conta?</string>
     <string name="text_title_dialog_confirm_logout">Confirmar</string>
-    <string name="text_message_dialog_confirm_logout">Aperte em confirmar para sair da sua conta</string>
+    <string name="text_message_dialog_confirm_logout">Aperte em entendi para sair da sua conta</string>
 
 </resources>

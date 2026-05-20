@@ -90,14 +90,15 @@
             android:indeterminateTint="@color/white"
             android:layout_gravity="center"
             tools:visibility="visible"
-            android:visibility="invisible"/>
+            android:visibility="invisible"
+            android:id="@+id/progressBar"/>
 
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Joice Bento Calixto da Costa"
+        android:text="@string/meu_nome"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

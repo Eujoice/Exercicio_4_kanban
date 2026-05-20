@@ -104,10 +104,10 @@ class TodoFragment : Fragment() {
 
                     for (ds in p0.children) {
                         val task = ds.getValue(Task::class.java) as Task
-
                         if (task.status == Status.TODO) {
                             taskList.add(task)
                         }
+
                     }
 
                     binding.progressBar.isVisible = false

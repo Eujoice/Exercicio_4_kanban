@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.joice.exercicio4.R
@@ -42,7 +43,7 @@ class LoginFragment : Fragment() {
 
     private fun initListener() {
         binding.buttonLogin.setOnClickListener {
-            findNavController().navigate(R.id.action_global_homeFragment)
+            validateData()
         }
 
         binding.btnRegister.setOnClickListener {
@@ -59,6 +60,8 @@ class LoginFragment : Fragment() {
         val senha = binding.editTxtSenha.text.toString().trim()
         if(email.isNotBlank()) {
             if(senha.isNotBlank()) {
+                binding.progressBar.isVisible = true
+                loginUser(email, senha)
             } else {
                 showBottomSheet(message = getString(R.string.password_empty))
             }
@@ -75,6 +78,7 @@ class LoginFragment : Fragment() {
                     if(task.isSuccessful) {
                         findNavController().navigate(R.id.action_global_homeFragment)
                     } else {
+                        binding.progressBar.isVisible = true
                         showBottomSheet(message = getString(FirebaseHelper.validError(task.exception?.message.toString())))
                     }
                 }
